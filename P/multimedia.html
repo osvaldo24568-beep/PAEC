@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia PAEC</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0d0d0d;
+            color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px 0 10px;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.8rem;
+            color: #00aaff;
+        }
+
+        .gallery, .videos {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            margin-bottom: 40px;
+        }
+
+        video, img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 170, 255, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        video:hover, img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(0, 170, 255, 0.6);
+        }
+
+        a {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 12px 25px;
+            background: #00aaff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            background: #0088cc;
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Multimedia del Proyecto</h1>
+
+    <!-- Videos -->
+    <h2>Videos</h2>
+    <div class="videos">
+        <video src="siu.mp4" controls></video>
+        <video src="f11.mp4" controls></video>
+        <video src="and.mp4" controls></video>
+    </div>
+
+    <!-- Imágenes -->
+    <h2>Imágenes</h2>
+    <div class="gallery">
+        <img src="0245.jpeg" alt="Imagen 1">
+        <img src="py.jpeg" alt="Imagen 2">
+        <img src="or.jpeg" alt="Imagen 3">
+        <img src="ty.jpeg" alt="Imagen 4">
+        <img src="f1.jpg" alt="Imagen 5">
+        <img src="f4.jpg" alt="Imagen 6">
+        <img src="f5.jpg" alt="Imagen 7">
+        <img src="f6.jpg" alt="Imagen 8">
+        <img src="f7.jpg" alt="Imagen 9">
+        <img src="f8.jpg" alt="Imagen 10">
+        <img src="f9.jpg" alt="Imagen 4">
+    </div>
+
+    <a href="index.html">Regresar</a>
+
+</body>
+</html>
+
